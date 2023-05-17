@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="naija-survey.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">NIGERIA 2023 ELECTION SURVEY</h1>
+      <p id="description">Thank you for your interest to participate in this survey. <br> This survey is to statistically presume the next president of Nigeria.<br>Be rest assured that your personal information will not be disclosed to any organisation.<br> This survey is for statistical purposes.</p>
+    </header>
+    <main id="form-section">
+        <div id="personal-info">
+            <label for="name">
+                Name:
+                <input type="text" id="name" placeholder="Name">
+            </label>
+            <label for="email" >
+                Email:
+                <input type="email" id="email" placeholder="Email">
+            </label>
+            <label for="age">
+                Age:
+                <input type="number" id="age" placeholder="Age" min="18" max="150">
+            </label>
+        </div>
+
+        <div id="form-gender" required>
+            <h6> What is your Gender? </h6>
+            <label>
+              <input type="radio" name="gender" id="male" >
+              Male
+            </label>
+            <label >
+              <input type="radio" name="gender" id="female">
+              Female
+            </label>
+        </div>
+
+        <div id="form-religion">
+            <h6> What is your Religion? </h6>
+            <label>
+              <input type="radio" name="religion" id="christian"  >
+              Christian
+            </label>
+            <label >
+              <input type="radio" name="religion" id="Islam">
+              Islam
+            </label>
+        </div>
+          
+      <div class="list">
+        <h2> Here are the list of names of the major candidates running for the Nigerian presidential Election 2023;</h2>
+        <ul>
+            <li>Alhaji Atiku Abubakar - Peoples' Democratic party (PDP)</li>          
+            <li>Asiwaju Bola Tinubu – All Progressive Congress (APC)</li>
+            <li>Mr Peter Obi – Labour Party (LP)</li>
+            <li> Mr Rabiu Musa Kwankwaso – New Nigeria People’s Party (NNPP)
+            </li>
+        </ul>
+      </div>
+
+      <form id="survey-form">
+        <select id="drop-down" >
+          <option value="occupation?" selected disabled > What is your occupation?</option>
+          <option value="student">Student</option>
+          <option value="trader">Trader</option>
+          <option value="business">Business person</option>
+        </select>
+
+       <div id="party-choice">
+        <h6>What party do you think will be able to tackle Nigeria's current challaging situations such Insecurity, Unemployment, etc... ?</h6>
+        <select id="drop-down" >
+            <option value="PDP" selected disabled > Select a party here...</option>
+            <option value="PDP"> Peoples' Democratic Party (PDP)</option>
+            <option value="student">All Progressive Congress (APC)</option>
+            <option value="trader">Labour Party (Lp)</option>
+            <option value="business">New Nigeria Peoples' Party (NNPP)</option>
+        </select>
+       </div><br><br>
+          
+       <div id="questions">
+            <div class="que1">
+                <h6>Do you have a voters card?</h6>  
+                <label for="#"> <input type="radio" name="card?"> No</label>
+                <label for="#"> <input type="radio" name="card?"> Yes</label>
+            </div>
+
+            <div class="que2">
+                <h6>will you vote in this upcoming Election?</h6>
+                <label for="#"><input type="radio" name="reside?"> No</label>
+                <label for="#"><input type="radio" name="reside?"> Yes</label>
+            </div>
+
+            <div class="que3">
+                <h6>will you vote where you currently reside?</h6>
+                <label for="#"><input type="radio" name="reside?"> No</label>
+                <label for="#"><input type="radio" name="reside?"> Yes</label>
+            </div><br>
+
+            <div class="que4">
+                <select name="vote-for" id="vote-for">
+                    <option value="who?" selected disabled >who do you wish to be the next president of Nigeria?</option>
+                    <option value="Atiku">Alhaji Atiku Abubakar - Peoples' Democratic party (PDP)</option>
+                    <option value="Atiku">Asiwaju Bola Tinubu – All Progressive Congress (APC)</option>
+                    <option value="Atiku">Mr Peter Obi – Labour Party (LP)</option>
+                    <option value="Atiku">Mr Rabiu Musa Kwankwaso – New Nigeria People’s Party (NNPP)</option>
+                </select><br>
+            </div>
+
+            <div class="que5">
+                <select name="vote-for" id="vote-for">
+                    <option value="who?" selected disabled >who are you voting for as the next president of Nigeria?</option>
+                    <option value="Atiku">Alhaji Atiku Abubakar - Peoples' Democratic party (PDP)</option>
+                    <option value="Atiku">Asiwaju Bola Tinubu – All Progressive Congress (APC)</option>
+                    <option value="Atiku">Mr Peter Obi – Labour Party (LP)</option>
+                    <option value="Atiku">Mr Rabiu Musa Kwankwaso – New Nigeria People’s Party (NNPP)</option>
+                </select>
+            </div><br>
+
+            <div class="que5">
+                <h6>what is your perspective of voting?</h6>
+                
+                <label for="Competence"><input type="radio" name="perspective" id="Competence"> Competence</label>
+                
+                <label for="Tribe"><input type="radio" name="perspective" id="Tribe"> Tribe</label>
+                
+                <label for="Religion"><input type="radio" name="perspective" id="Religion"> Religion</label>
+            </div><br>
+
+            <div class="que6">
+                <select name="food" id="food">
+                    <option value="who?" selected disabled >Which of the following will you prefer? (optional)</option>
+                    <option value="SUYA">SUYA</option>
+                    <option value="SOUP">GOAT-MEAT PEPPER SOUP</option>
+                    <option value="Atiku">PEPPERISH STEW</option>
+                </select>
+            </div>
+        </div><br>
+
+        <div id="comment-form">
+            <h6>what is your opinion on how Nigeria can be a better country?</h6>
+          <textarea placeholder="Enter your comments here..." id="commments" value="comments" name="comments"></textarea>
+        </div>
+        <br>
+        <div id="btn">
+          <button>finished</button>
+        </div>
+      </form>
+
+    </main>
+  </body>
+</html>
